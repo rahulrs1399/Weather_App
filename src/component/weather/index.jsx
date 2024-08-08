@@ -53,7 +53,7 @@ export default function Weather() {
   }, []);
 
   if(loading){
-    <div>Data Loading...</div>
+    return <div>Data Loading...</div>
   }
 
 //   console.log(weatherData);
@@ -69,7 +69,7 @@ export default function Weather() {
           />
           </div>
         { weatherData?.cod !== 200 ? (
-          <div className="error">Oops! City not found</div>
+          <div style={{display:"flex", color: 'red'}}>Oops! City not found</div>
         ) : (
           <section className="result">
             <figure className="name">

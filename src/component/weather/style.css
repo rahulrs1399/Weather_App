@@ -112,6 +112,12 @@ main.error{
     animation: errorEffect 0.3s linear 1;
 }
 
+main .error{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
 @keyframes errorEffect{
     0%{
         transform: translate(10px, 5px)
